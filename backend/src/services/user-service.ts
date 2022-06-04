@@ -1,6 +1,8 @@
 import userRepo from '@repos/user-repo'
 import { IUser } from '@models/user-model'
 import { UserNotFoundError } from '@shared/errors'
+import gdal from 'gdal'
+import fs from 'fs'
 
 /**
  * Get all users.
@@ -8,6 +10,10 @@ import { UserNotFoundError } from '@shared/errors'
  * @returns
  */
 function getAll (): Promise<IUser[]> {
+  const tifSolar = gdal.open('/src/assets/tifs/PVOUT.tif')
+  const bands = tifSolar.bands.get(1)
+  console.log('🚀 ~ file: user-service.ts ~ line 15 ~ getAll ~ bands', bands)
+
   return userRepo.getAll()
 }
 

@@ -1,5 +1,5 @@
-const webpack = require('webpack');
-const path = require('path');
+const webpack = require('webpack')
+const path = require('path')
 
 const config = {
   entry: [
@@ -54,7 +54,7 @@ const config = {
     ]
   },
   devServer: {
-    'static': {
+    static: {
       directory: './dist'
     }
   },
@@ -69,6 +69,6 @@ const config = {
       'react-dom': '@hot-loader/react-dom'
     }
   }
-};
+}
 
-module.exports = config;
+module.exports = config

@@ -56,7 +56,7 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@mapbox/node-pre-gyp@^1.0.0":
+"@mapbox/node-pre-gyp@^1.0.0", "@mapbox/node-pre-gyp@^1.0.6":
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/@mapbox/node-pre-gyp/-/node-pre-gyp-1.0.9.tgz#09a8781a3a036151cdebbe8719d6f8b25d4058bc"
   integrity sha512-aDF3S3rK9Q2gey/WAttUlISduDItz5BU3306M9Eyv6/oS40aMprnopshtlKTykxRNIBEZuRMaZAnbrQ4QtKGyw==
@@ -213,6 +213,11 @@
   integrity sha512-nEnwB++1u5lVDM2UI4c1+5R+FYaKfaAzS4OococimjVm3nQw3TuzH5UNsocrcTBbhnerblyHj4A49qXbIiZdpA==
   dependencies:
     "@types/node" "*"
+
+"@types/gdal@^0.9.3":
+  version "0.9.3"
+  resolved "https://registry.yarnpkg.com/@types/gdal/-/gdal-0.9.3.tgz#969d39a8f26ea783647fc31f025d5609d5834cb9"
+  integrity sha512-Jy9xNCKPta7gkjheiZw8oOGenZXcQGtPJmyW1siH1vpCToN705WTqYxNYsiGpDZejrgFstwG/KUDSNc/30adOw==
 
 "@types/jasmine@^4.0.3":
   version "4.0.3"
@@ -1512,6 +1517,14 @@ gauge@^3.0.0:
     strip-ansi "^6.0.1"
     wide-align "^1.1.2"
 
+gdal@^0.11.1:
+  version "0.11.1"
+  resolved "https://registry.yarnpkg.com/gdal/-/gdal-0.11.1.tgz#ddceb44a60de34d19d0cc140900644bfca3c7b42"
+  integrity sha512-nzlAzcU3/s3I58dcYtj27pRLV3UDubExUIdEDRj4NAUlRbFbgD6uE3/jr8aRMUyexHekQ7f99JvjlAkjDFwKsA==
+  dependencies:
+    "@mapbox/node-pre-gyp" "^1.0.6"
+    nan "~2.15.0"
+
 get-intrinsic@^1.0.2, get-intrinsic@^1.1.0, get-intrinsic@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/get-intrinsic/-/get-intrinsic-1.1.1.tgz#15f59f376f855c446963948f0d24cd3637b4abc6"
@@ -2252,6 +2265,11 @@ ms@2.1.3, ms@^2.1.1:
   version "2.1.3"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.3.tgz#574c8138ce1d2b5861f0b44579dbadd60c6615b2"
   integrity sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==
+
+nan@~2.15.0:
+  version "2.15.0"
+  resolved "https://registry.yarnpkg.com/nan/-/nan-2.15.0.tgz#3f34a473ff18e15c1b5626b62903b5ad6e665fee"
+  integrity sha512-8ZtvEnA2c5aYCZYd1cvgdnU6cqwixRoYg70xPLWUws5ORTa/lnw+u4amixRS/Ac5U5mQVgp9pnlSUnbNWFaWZQ==
 
 natural-compare@^1.4.0:
   version "1.4.0"

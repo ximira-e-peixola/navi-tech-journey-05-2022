@@ -1,10 +1,10 @@
-import React from "react";
-import Slider from "react-slick";
-import styled from "styled-components";
+import React from 'react'
+import Slider from 'react-slick'
+import styled from 'styled-components'
 // Components
-import TestimonialBox from "../Elements/TestimonialBox";
+import TestimonialBox from '../Elements/TestimonialBox'
 
-export default function TestimonialSlider() {
+export default function TestimonialSlider () {
   const settings = {
     infinite: true,
     speed: 500,
@@ -16,18 +16,18 @@ export default function TestimonialSlider() {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1,
-        },
+          slidesToScroll: 1
+        }
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
+          slidesToScroll: 1
+        }
+      }
+    ]
+  }
   return (
     <div>
       <Slider {...settings}>
@@ -69,7 +69,7 @@ export default function TestimonialSlider() {
         </LogoWrapper>
       </Slider>
     </div>
-  );
+  )
 }
 
 const LogoWrapper = styled.div`
@@ -80,4 +80,4 @@ const LogoWrapper = styled.div`
     outline: none;
     border: 0px;
   }
-`;
+`
