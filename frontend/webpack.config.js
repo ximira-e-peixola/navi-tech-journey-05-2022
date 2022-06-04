@@ -21,13 +21,35 @@ const config = {
         test: /\.css$/,
         use: [
           'style-loader',
-          'css-loader'
-        ]
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1
+            }
+          },
+          'postcss-loader'
+        ],
+        exclude: /\.module\.css$/
       },
       {
         test: /\.ts(x)?$/,
         loader: 'ts-loader',
         exclude: /node_modules/
+      },
+      {
+        test: /\.png$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              mimetype: 'image/png'
+            }
+          }
+        ]
+      },
+      {
+        test: /\.svg$/,
+        use: 'file-loader'
       }
     ]
   },
@@ -40,7 +62,8 @@ const config = {
     extensions: [
       '.tsx',
       '.ts',
-      '.js'
+      '.js',
+      '.jsx'
     ],
     alias: {
       'react-dom': '@hot-loader/react-dom'

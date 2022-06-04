@@ -1,29 +1,18 @@
+import React from "react";
+import { Helmet } from "react-helmet";
+// Screens
+import Landing from "./screens/Landing";
 
-import 'antd/dist/antd.css';
-import * as React from 'react';
-import { hot } from "react-hot-loader/root";
-import { Button } from 'antd';
- 
-
- interface Props {
-   name:
-    string
+export default function App() {
+  return (
+    <>
+      <Helmet>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com"  />
+        <link href="https://fonts.googleapis.com/css2?family=Khula:wght@400;600;800&display=swap" rel="stylesheet" />
+      </Helmet>
+      <Landing />
+    </>
+  );
 }
 
-class App extends React.Component<Props> {
-  render() {
-    const { name } = this.props;
-    return (
-      <>
-        <div className="App">
-          <Button type="primary">Button</Button>
-        </div>
-        <h1>
-          Hello {name}
-        </h1>
-      </>
-    );
-  }
-}
-
-export default hot(App);
