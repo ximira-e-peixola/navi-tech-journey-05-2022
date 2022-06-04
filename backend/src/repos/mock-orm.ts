@@ -1,32 +1,28 @@
-import jsonfile from 'jsonfile';
+import jsonfile from 'jsonfile'
 
-
-const dbFilePath = 'src/repos/database.json';
-
+const dbFilePath = 'src/repos/database.json'
 
 /**
  * Fetch the json from the file.
- * 
- * @returns 
+ *
+ * @returns
  */
-function openDb(): Promise<Record<string, any>> {
-    return jsonfile.readFile(dbFilePath);
+function openDb (): Promise<Record<string, any>> {
+  return jsonfile.readFile(dbFilePath)
 }
-
 
 /**
  * Update the file.
- * 
- * @param db 
- * @returns 
+ *
+ * @param db
+ * @returns
  */
-function saveDb(db: Record<string, any>): Promise<void> {
-    return jsonfile.writeFile(dbFilePath, db);
+function saveDb (db: Record<string, any>): Promise<void> {
+  return jsonfile.writeFile(dbFilePath, db)
 }
-
 
 // Export default
 export default {
-    openDb,
-    saveDb,
-} as const;
+  openDb,
+  saveDb
+} as const
