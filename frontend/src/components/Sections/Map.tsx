@@ -96,7 +96,7 @@ export function Map () {
           console.log(json)
           setResult(json)
         }))
-  }, [location])
+  }, [location, consumer])
 
   const handleDraw = useCallback(() => {
     draw.changeMode('draw_polygon')

@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-scroll'
+import { Link as RouterLink } from 'react-router-dom'
 // Assets
 import CloseIcon from '../../assets/svg/CloseIcon'
-import LogoIcon from '../../assets/svg/Logo'
 
 type SidebarProps = {
    sidebarOpen: any
@@ -15,9 +15,8 @@ export default function Sidebar ({ sidebarOpen, toggleSidebar }:SidebarProps) {
     <Wrapper className="animate darkBg" sidebarOpen={sidebarOpen}>
       <SidebarHeader className="flexSpaceCenter">
         <div className="flexNullCenter">
-          <LogoIcon />
           <h1 className="whiteColor font20" style={{ marginLeft: '15px' }}>
-            fanatic
+            solarent
           </h1>
         </div>
         <CloseBtn onClick={() => toggleSidebar(!sidebarOpen)} className="animate pointer">
@@ -51,35 +50,7 @@ export default function Sidebar ({ sidebarOpen, toggleSidebar }:SidebarProps) {
             smooth={true}
             offset={-60}
           >
-            Services
-          </Link>
-        </li>
-        <li className="semiBold font15 pointer">
-          <Link
-            onClick={() => toggleSidebar(!sidebarOpen)}
-            activeClass="active"
-            className="whiteColor"
-            style={{ padding: '10px 15px' }}
-            to="projects"
-            spy={true}
-            smooth={true}
-            offset={-60}
-          >
-            Projects
-          </Link>
-        </li>
-        <li className="semiBold font15 pointer">
-          <Link
-            onClick={() => toggleSidebar(!sidebarOpen)}
-            activeClass="active"
-            className="whiteColor"
-            style={{ padding: '10px 15px' }}
-            to="blog"
-            spy={true}
-            smooth={true}
-            offset={-60}
-          >
-            Blog
+            Serviços
           </Link>
         </li>
         <li className="semiBold font15 pointer">
@@ -93,7 +64,7 @@ export default function Sidebar ({ sidebarOpen, toggleSidebar }:SidebarProps) {
             smooth={true}
             offset={-60}
           >
-            Pricing
+            Modalidades
           </Link>
         </li>
         <li className="semiBold font15 pointer">
@@ -107,21 +78,16 @@ export default function Sidebar ({ sidebarOpen, toggleSidebar }:SidebarProps) {
             smooth={true}
             offset={-60}
           >
-            Contact
+            Contato
           </Link>
         </li>
       </UlStyle>
       <UlStyle className="flexSpaceCenter">
-        <li className="semiBold font15 pointer">
-          <a href="/" style={{ padding: '10px 30px 10px 0' }} className="whiteColor">
-            Log in
+        <RouterLink style={{ padding: '10px 15px' }} to="calculate" >
+          <a className="radius8 lightBg" style={{ padding: '10px 15px' }}>
+            Calcular
           </a>
-        </li>
-        <li className="semiBold font15 pointer flexCenter">
-          <a href="/" className="radius8 lightBg" style={{ padding: '10px 15px' }}>
-            Get Started
-          </a>
-        </li>
+        </RouterLink>
       </UlStyle>
     </Wrapper>
   )
