@@ -133,7 +133,8 @@ export function Map () {
         <Sider width={500} collapsedWidth={250} style={{ backgroundColor: '#ffb80023' }}>
           <Row style={{ width: '100%' }}>
             <Col span={24}>
-              <Card style={{ backgroundColor: 'rgba(255, 204, 77, 0.6)', margin: 10, borderRadius: 20 }} bordered={false} title={<CardTitle />}>
+              <Card style={{ backgroundColor: 'rgba(255, 204, 77, 0.6)', margin: 10, borderRadius: 20 }} bordered={false}>
+                <CardTitle />
                 Busque pelo seu endereço aqui:
                 <Select
                   style={{ margin: '15px 5px', width: '98%' }}
