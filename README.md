@@ -2,9 +2,9 @@
 
 O Frontend foi feito em React+Typescript usamos o antd como biblioteca de design.
 
-o Backend foi desenvolvido em Node.js+Typescript com express.js.
+O Backend foi desenvolvido em Node.js+Typescript com express.js.
 
-As pipelines feitas em python extraem os dados das fontes e são manualmente inseridos no projeto do backend
+As pipelines feitas em python extraem os dados das fontes e são inseridos no projeto do backend.
 
 ## Installation
 
@@ -25,6 +25,13 @@ $ yarn && yarn dev
 ```
 $ cd frontend
 $ yarn && yarn start
+```
+ **Pipelines**
+
+```
+$ cd pipeline
+$ pip install -r requirements.txt
+$ python main.py
 ```
  
  
