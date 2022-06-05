@@ -72,6 +72,7 @@ export function Map () {
 
   const handleClear = useCallback(() => {
     draw?.deleteAll()
+    handleDisableCalculate()
   }, [])
 
   useEffect(() => {
