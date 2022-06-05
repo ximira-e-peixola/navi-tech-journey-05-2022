@@ -154,7 +154,7 @@ export function Map () {
                 </Row>
               </Card>
               {result && (
-                <Card style={{ backgroundColor: 'rgba(255, 204, 77, 0.2)', margin: 10, borderRadius: 20 }} bordered={false} title="Seu resultado">
+                <Card style={{ backgroundColor: 'rgba(255, 204, 77, 0.2)', margin: 10, borderRadius: 20 }} bordered={false} title="Resultado estimado para a sua instalação:">
                   <Row>
                     <Col span={12}>
                       Número de paineis solares:
@@ -173,7 +173,7 @@ export function Map () {
                   </Row>
                   <Row>
                     <Col span={12}>
-                      Potência estimada:
+                      Potência gerada estimada:
                     </Col>
                     <Col span={12}>
                       {result.estimated_output.toFixed(2)}kWh
@@ -181,7 +181,7 @@ export function Map () {
                   </Row>
                   <Row>
                     <Col span={12}>
-                      Produção em real:
+                      Produção mensal estimada:
                     </Col>
                     <Col span={12}>
                       R${result.estimated_real.toFixed(2)}
