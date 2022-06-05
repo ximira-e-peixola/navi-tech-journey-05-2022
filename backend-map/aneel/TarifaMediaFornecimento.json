@@ -1,56 +1,1019 @@
 [
     {
-      "nomRegiao": "Brasil",
-      "vlrConsumoMWh": 463.54,
-      "anoReferencia": 2016,
-      "mesReferencia": 3,
-      "nomClasseConsumo": "Residencia",
-      "ideTarifaMediaFornecimento": 666,
-      "dthProcessamento": "2017-09-13"
+        "nomRegiao": "Brasil",
+        "vlrConsumoMWh": 434.27,
+        "anoReferencia": 2016,
+        "mesReferencia": 12,
+        "nomClasseConsumo": "Comercial e Serviços e Outras",
+        "ideTarifaMediaFornecimento": 1,
+        "dthProcessamento": 1505260800000
     },
     {
-      "nomRegiao": "Centro-Oeste",
-      "vlrConsumoMWh": 464.09,
-      "anoReferencia": 2016,
-      "mesReferencia": 3,
-      "nomClasseConsumo": "Residencia",
-      "ideTarifaMediaFornecimento": 678,
-      "dthProcessamento": "2017-09-13"
+        "nomRegiao": "Centro-Oeste",
+        "vlrConsumoMWh": 452.17,
+        "anoReferencia": 2016,
+        "mesReferencia": 12,
+        "nomClasseConsumo": "Comercial e Serviços e Outras",
+        "ideTarifaMediaFornecimento": 3,
+        "dthProcessamento": 1505260800000
     },
     {
-      "nomRegiao": "Nordeste",
-      "vlrConsumoMWh": 386.67,
-      "anoReferencia": 2016,
-      "mesReferencia": 3,
-      "nomClasseConsumo": "Residencia",
-      "ideTarifaMediaFornecimento": 690,
-      "dthProcessamento": "2017-09-13"
+        "nomRegiao": "Nordeste",
+        "vlrConsumoMWh": 415.44,
+        "anoReferencia": 2016,
+        "mesReferencia": 12,
+        "nomClasseConsumo": "Comercial e Serviços e Outras",
+        "ideTarifaMediaFornecimento": 5,
+        "dthProcessamento": 1505260800000
     },
     {
-      "nomRegiao": "Norte",
-      "vlrConsumoMWh": 442.69,
-      "anoReferencia": 2016,
-      "mesReferencia": 3,
-      "nomClasseConsumo": "Residencia",
-      "ideTarifaMediaFornecimento": 702,
-      "dthProcessamento": "2017-09-13"
+        "nomRegiao": "Norte",
+        "vlrConsumoMWh": 484.89,
+        "anoReferencia": 2016,
+        "mesReferencia": 12,
+        "nomClasseConsumo": "Comercial e Serviços e Outras",
+        "ideTarifaMediaFornecimento": 7,
+        "dthProcessamento": 1505260800000
     },
     {
-      "nomRegiao": "Sudeste",
-      "vlrConsumoMWh": 486.72,
-      "anoReferencia": 2016,
-      "mesReferencia": 3,
-      "nomClasseConsumo": "Residencia",
-      "ideTarifaMediaFornecimento": 714,
-      "dthProcessamento": "2017-09-13"
+        "nomRegiao": "Sudeste",
+        "vlrConsumoMWh": 436.31,
+        "anoReferencia": 2016,
+        "mesReferencia": 12,
+        "nomClasseConsumo": "Comercial e Serviços e Outras",
+        "ideTarifaMediaFornecimento": 9,
+        "dthProcessamento": 1505260800000
     },
     {
-      "nomRegiao": "Sul",
-      "vlrConsumoMWh": 493.9,
-      "anoReferencia": 2016,
-      "mesReferencia": 3,
-      "nomClasseConsumo": "Residencia",
-      "ideTarifaMediaFornecimento": 726,
-      "dthProcessamento": "2017-09-13"
+        "nomRegiao": "Sul",
+        "vlrConsumoMWh": 420.76,
+        "anoReferencia": 2016,
+        "mesReferencia": 12,
+        "nomClasseConsumo": "Comercial e Serviços e Outras",
+        "ideTarifaMediaFornecimento": 11,
+        "dthProcessamento": 1505260800000
+    },
+    {
+        "nomRegiao": "Brasil",
+        "vlrConsumoMWh": 442.94,
+        "anoReferencia": 2017,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Comercial, Serviços e Outras",
+        "ideTarifaMediaFornecimento": 1585,
+        "dthProcessamento": 1507593600000
+    },
+    {
+        "nomRegiao": "Centro-Oeste",
+        "vlrConsumoMWh": 449.62,
+        "anoReferencia": 2017,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Comercial, Serviços e Outras",
+        "ideTarifaMediaFornecimento": 1586,
+        "dthProcessamento": 1507593600000
+    },
+    {
+        "nomRegiao": "Nordeste",
+        "vlrConsumoMWh": 429.86,
+        "anoReferencia": 2017,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Comercial, Serviços e Outras",
+        "ideTarifaMediaFornecimento": 1587,
+        "dthProcessamento": 1507593600000
+    },
+    {
+        "nomRegiao": "Norte",
+        "vlrConsumoMWh": 499.48,
+        "anoReferencia": 2017,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Comercial, Serviços e Outras",
+        "ideTarifaMediaFornecimento": 1588,
+        "dthProcessamento": 1507593600000
+    },
+    {
+        "nomRegiao": "Sudeste",
+        "vlrConsumoMWh": 445.52,
+        "anoReferencia": 2017,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Comercial, Serviços e Outras",
+        "ideTarifaMediaFornecimento": 1589,
+        "dthProcessamento": 1507593600000
+    },
+    {
+        "nomRegiao": "Sul",
+        "vlrConsumoMWh": 424.47,
+        "anoReferencia": 2017,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Comercial, Serviços e Outras",
+        "ideTarifaMediaFornecimento": 1590,
+        "dthProcessamento": 1507593600000
+    },
+    {
+        "nomRegiao": "Brasil",
+        "vlrConsumoMWh": 534.7,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Consumo Próprio",
+        "ideTarifaMediaFornecimento": 2236,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Centro-Oeste",
+        "vlrConsumoMWh": 558.91,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Consumo Próprio",
+        "ideTarifaMediaFornecimento": 2237,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Nordeste",
+        "vlrConsumoMWh": 515.83,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Consumo Próprio",
+        "ideTarifaMediaFornecimento": 2238,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Norte",
+        "vlrConsumoMWh": 636.31,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Consumo Próprio",
+        "ideTarifaMediaFornecimento": 2239,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Sudeste",
+        "vlrConsumoMWh": 526.15,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Consumo Próprio",
+        "ideTarifaMediaFornecimento": 2240,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Sul",
+        "vlrConsumoMWh": 511.42,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Consumo Próprio",
+        "ideTarifaMediaFornecimento": 2241,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Brasil",
+        "vlrConsumoMWh": 311.39,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Iluminação Pública",
+        "ideTarifaMediaFornecimento": 2242,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Centro-Oeste",
+        "vlrConsumoMWh": 314.93,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Iluminação Pública",
+        "ideTarifaMediaFornecimento": 2243,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Nordeste",
+        "vlrConsumoMWh": 300.66,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Iluminação Pública",
+        "ideTarifaMediaFornecimento": 2244,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Norte",
+        "vlrConsumoMWh": 360.21,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Iluminação Pública",
+        "ideTarifaMediaFornecimento": 2245,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Sudeste",
+        "vlrConsumoMWh": 318.46,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Iluminação Pública",
+        "ideTarifaMediaFornecimento": 2246,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Sul",
+        "vlrConsumoMWh": 287.84,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Iluminação Pública",
+        "ideTarifaMediaFornecimento": 2247,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Brasil",
+        "vlrConsumoMWh": 469.88,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Industrial",
+        "ideTarifaMediaFornecimento": 2248,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Centro-Oeste",
+        "vlrConsumoMWh": 498.04,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Industrial",
+        "ideTarifaMediaFornecimento": 2249,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Nordeste",
+        "vlrConsumoMWh": 420.23,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Industrial",
+        "ideTarifaMediaFornecimento": 2250,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Norte",
+        "vlrConsumoMWh": 521.29,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Industrial",
+        "ideTarifaMediaFornecimento": 2251,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Sudeste",
+        "vlrConsumoMWh": 479.58,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Industrial",
+        "ideTarifaMediaFornecimento": 2252,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Sul",
+        "vlrConsumoMWh": 464.15,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Industrial",
+        "ideTarifaMediaFornecimento": 2253,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Brasil",
+        "vlrConsumoMWh": 533.8,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Poder Público",
+        "ideTarifaMediaFornecimento": 2254,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Centro-Oeste",
+        "vlrConsumoMWh": 552.03,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Poder Público",
+        "ideTarifaMediaFornecimento": 2255,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Nordeste",
+        "vlrConsumoMWh": 510.8,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Poder Público",
+        "ideTarifaMediaFornecimento": 2256,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Norte",
+        "vlrConsumoMWh": 603.5,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Poder Público",
+        "ideTarifaMediaFornecimento": 2257,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Sudeste",
+        "vlrConsumoMWh": 524.71,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Poder Público",
+        "ideTarifaMediaFornecimento": 2258,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Sul",
+        "vlrConsumoMWh": 527.67,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Poder Público",
+        "ideTarifaMediaFornecimento": 2259,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Brasil",
+        "vlrConsumoMWh": 463.54,
+        "anoReferencia": 2016,
+        "mesReferencia": 3,
+        "nomClasseConsumo": "Residencia",
+        "ideTarifaMediaFornecimento": 666,
+        "dthProcessamento": 1505260800000
+    },
+    {
+        "nomRegiao": "Centro-Oeste",
+        "vlrConsumoMWh": 464.09,
+        "anoReferencia": 2016,
+        "mesReferencia": 3,
+        "nomClasseConsumo": "Residencia",
+        "ideTarifaMediaFornecimento": 678,
+        "dthProcessamento": 1505260800000
+    },
+    {
+        "nomRegiao": "Nordeste",
+        "vlrConsumoMWh": 386.67,
+        "anoReferencia": 2016,
+        "mesReferencia": 3,
+        "nomClasseConsumo": "Residencia",
+        "ideTarifaMediaFornecimento": 690,
+        "dthProcessamento": 1505260800000
+    },
+    {
+        "nomRegiao": "Norte",
+        "vlrConsumoMWh": 442.69,
+        "anoReferencia": 2016,
+        "mesReferencia": 3,
+        "nomClasseConsumo": "Residencia",
+        "ideTarifaMediaFornecimento": 702,
+        "dthProcessamento": 1505260800000
+    },
+    {
+        "nomRegiao": "Sudeste",
+        "vlrConsumoMWh": 486.72,
+        "anoReferencia": 2016,
+        "mesReferencia": 3,
+        "nomClasseConsumo": "Residencia",
+        "ideTarifaMediaFornecimento": 714,
+        "dthProcessamento": 1505260800000
+    },
+    {
+        "nomRegiao": "Sul",
+        "vlrConsumoMWh": 493.9,
+        "anoReferencia": 2016,
+        "mesReferencia": 3,
+        "nomClasseConsumo": "Residencia",
+        "ideTarifaMediaFornecimento": 726,
+        "dthProcessamento": 1505260800000
+    },
+    {
+        "nomRegiao": "Brasil",
+        "vlrConsumoMWh": 536.48,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Residencial",
+        "ideTarifaMediaFornecimento": 2260,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Centro-Oeste",
+        "vlrConsumoMWh": 559.43,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Residencial",
+        "ideTarifaMediaFornecimento": 2261,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Nordeste",
+        "vlrConsumoMWh": 503.94,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Residencial",
+        "ideTarifaMediaFornecimento": 2262,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Norte",
+        "vlrConsumoMWh": 616.88,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Residencial",
+        "ideTarifaMediaFornecimento": 2263,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Sudeste",
+        "vlrConsumoMWh": 541.81,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Residencial",
+        "ideTarifaMediaFornecimento": 2264,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Sul",
+        "vlrConsumoMWh": 517.93,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Residencial",
+        "ideTarifaMediaFornecimento": 2265,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Brasil",
+        "vlrConsumoMWh": 389.5,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Rural",
+        "ideTarifaMediaFornecimento": 2266,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Centro-Oeste",
+        "vlrConsumoMWh": 416.71,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Rural",
+        "ideTarifaMediaFornecimento": 2267,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Nordeste",
+        "vlrConsumoMWh": 388.54,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Rural",
+        "ideTarifaMediaFornecimento": 2268,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Norte",
+        "vlrConsumoMWh": 446.2,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Rural",
+        "ideTarifaMediaFornecimento": 2269,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Sudeste",
+        "vlrConsumoMWh": 397.16,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Rural",
+        "ideTarifaMediaFornecimento": 2270,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Sul",
+        "vlrConsumoMWh": 360.95,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Rural",
+        "ideTarifaMediaFornecimento": 2271,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Brasil",
+        "vlrConsumoMWh": 260.7,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Rural Aquicultor",
+        "ideTarifaMediaFornecimento": 2272,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Centro-Oeste",
+        "vlrConsumoMWh": 267.54,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Rural Aquicultor",
+        "ideTarifaMediaFornecimento": 2273,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Nordeste",
+        "vlrConsumoMWh": 250.44,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Rural Aquicultor",
+        "ideTarifaMediaFornecimento": 2274,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Norte",
+        "vlrConsumoMWh": 481.48,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Rural Aquicultor",
+        "ideTarifaMediaFornecimento": 2275,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Sudeste",
+        "vlrConsumoMWh": 378.48,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Rural Aquicultor",
+        "ideTarifaMediaFornecimento": 2276,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Sul",
+        "vlrConsumoMWh": 289.04,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Rural Aquicultor",
+        "ideTarifaMediaFornecimento": 2277,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Brasil",
+        "vlrConsumoMWh": 302.25,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Rural Irrigante",
+        "ideTarifaMediaFornecimento": 2278,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Centro-Oeste",
+        "vlrConsumoMWh": 343.37,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Rural Irrigante",
+        "ideTarifaMediaFornecimento": 2279,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Nordeste",
+        "vlrConsumoMWh": 241.77,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Rural Irrigante",
+        "ideTarifaMediaFornecimento": 2280,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Norte",
+        "vlrConsumoMWh": 339.6,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Rural Irrigante",
+        "ideTarifaMediaFornecimento": 2281,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Sudeste",
+        "vlrConsumoMWh": 331.76,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Rural Irrigante",
+        "ideTarifaMediaFornecimento": 2282,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Sul",
+        "vlrConsumoMWh": 344.36,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Rural Irrigante",
+        "ideTarifaMediaFornecimento": 2283,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Brasil",
+        "vlrConsumoMWh": 350.51,
+        "anoReferencia": 2016,
+        "mesReferencia": 3,
+        "nomClasseConsumo": "Serviço Público",
+        "ideTarifaMediaFornecimento": 1197,
+        "dthProcessamento": 1505260800000
+    },
+    {
+        "nomRegiao": "Centro-Oeste",
+        "vlrConsumoMWh": 349.26,
+        "anoReferencia": 2016,
+        "mesReferencia": 3,
+        "nomClasseConsumo": "Serviço Público",
+        "ideTarifaMediaFornecimento": 1214,
+        "dthProcessamento": 1505260800000
+    },
+    {
+        "nomRegiao": "Nordeste",
+        "vlrConsumoMWh": 286.94,
+        "anoReferencia": 2016,
+        "mesReferencia": 3,
+        "nomClasseConsumo": "Serviço Público",
+        "ideTarifaMediaFornecimento": 1231,
+        "dthProcessamento": 1505260800000
+    },
+    {
+        "nomRegiao": "Norte",
+        "vlrConsumoMWh": 329.94,
+        "anoReferencia": 2016,
+        "mesReferencia": 3,
+        "nomClasseConsumo": "Serviço Público",
+        "ideTarifaMediaFornecimento": 1248,
+        "dthProcessamento": 1505260800000
+    },
+    {
+        "nomRegiao": "Sudeste",
+        "vlrConsumoMWh": 377.33,
+        "anoReferencia": 2016,
+        "mesReferencia": 3,
+        "nomClasseConsumo": "Serviço Público",
+        "ideTarifaMediaFornecimento": 1265,
+        "dthProcessamento": 1505260800000
+    },
+    {
+        "nomRegiao": "Sul",
+        "vlrConsumoMWh": 380.62,
+        "anoReferencia": 2016,
+        "mesReferencia": 3,
+        "nomClasseConsumo": "Serviço Público",
+        "ideTarifaMediaFornecimento": 1282,
+        "dthProcessamento": 1505260800000
+    },
+    {
+        "nomRegiao": "Brasil",
+        "vlrConsumoMWh": 336.88,
+        "anoReferencia": 2016,
+        "mesReferencia": 12,
+        "nomClasseConsumo": "Serviço Público (Água e esgoto e saneamento)",
+        "ideTarifaMediaFornecimento": 1291,
+        "dthProcessamento": 1505260800000
+    },
+    {
+        "nomRegiao": "Centro-Oeste",
+        "vlrConsumoMWh": 347.64,
+        "anoReferencia": 2016,
+        "mesReferencia": 12,
+        "nomClasseConsumo": "Serviço Público (Água e esgoto e saneamento)",
+        "ideTarifaMediaFornecimento": 1293,
+        "dthProcessamento": 1505260800000
+    },
+    {
+        "nomRegiao": "Nordeste",
+        "vlrConsumoMWh": 305.22,
+        "anoReferencia": 2016,
+        "mesReferencia": 12,
+        "nomClasseConsumo": "Serviço Público (Água e esgoto e saneamento)",
+        "ideTarifaMediaFornecimento": 1295,
+        "dthProcessamento": 1505260800000
+    },
+    {
+        "nomRegiao": "Norte",
+        "vlrConsumoMWh": 382.38,
+        "anoReferencia": 2016,
+        "mesReferencia": 12,
+        "nomClasseConsumo": "Serviço Público (Água e esgoto e saneamento)",
+        "ideTarifaMediaFornecimento": 1297,
+        "dthProcessamento": 1505260800000
+    },
+    {
+        "nomRegiao": "Sudeste",
+        "vlrConsumoMWh": 352.57,
+        "anoReferencia": 2016,
+        "mesReferencia": 12,
+        "nomClasseConsumo": "Serviço Público (Água e esgoto e saneamento)",
+        "ideTarifaMediaFornecimento": 1299,
+        "dthProcessamento": 1505260800000
+    },
+    {
+        "nomRegiao": "Sul",
+        "vlrConsumoMWh": 325.36,
+        "anoReferencia": 2016,
+        "mesReferencia": 12,
+        "nomClasseConsumo": "Serviço Público (Água e esgoto e saneamento)",
+        "ideTarifaMediaFornecimento": 1301,
+        "dthProcessamento": 1505260800000
+    },
+    {
+        "nomRegiao": "Brasil",
+        "vlrConsumoMWh": 336.07,
+        "anoReferencia": 2017,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Serviço Público (Água, esgoto e saneamento)",
+        "ideTarifaMediaFornecimento": 1639,
+        "dthProcessamento": 1507593600000
+    },
+    {
+        "nomRegiao": "Centro-Oeste",
+        "vlrConsumoMWh": 337.2,
+        "anoReferencia": 2017,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Serviço Público (Água, esgoto e saneamento)",
+        "ideTarifaMediaFornecimento": 1640,
+        "dthProcessamento": 1507593600000
+    },
+    {
+        "nomRegiao": "Nordeste",
+        "vlrConsumoMWh": 316.79,
+        "anoReferencia": 2017,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Serviço Público (Água, esgoto e saneamento)",
+        "ideTarifaMediaFornecimento": 1641,
+        "dthProcessamento": 1507593600000
+    },
+    {
+        "nomRegiao": "Norte",
+        "vlrConsumoMWh": 393.33,
+        "anoReferencia": 2017,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Serviço Público (Água, esgoto e saneamento)",
+        "ideTarifaMediaFornecimento": 1642,
+        "dthProcessamento": 1507593600000
+    },
+    {
+        "nomRegiao": "Sudeste",
+        "vlrConsumoMWh": 344.23,
+        "anoReferencia": 2017,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Serviço Público (Água, esgoto e saneamento)",
+        "ideTarifaMediaFornecimento": 1643,
+        "dthProcessamento": 1507593600000
+    },
+    {
+        "nomRegiao": "Sul",
+        "vlrConsumoMWh": 324.95,
+        "anoReferencia": 2017,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Serviço Público (Água, esgoto e saneamento)",
+        "ideTarifaMediaFornecimento": 1644,
+        "dthProcessamento": 1507593600000
+    },
+    {
+        "nomRegiao": "Brasil",
+        "vlrConsumoMWh": 420.67,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Serviço Público (tração elétrica)",
+        "ideTarifaMediaFornecimento": 2290,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Centro-Oeste",
+        "vlrConsumoMWh": 527.1,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Serviço Público (tração elétrica)",
+        "ideTarifaMediaFornecimento": 2291,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Nordeste",
+        "vlrConsumoMWh": 347.58,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Serviço Público (tração elétrica)",
+        "ideTarifaMediaFornecimento": 2292,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Sudeste",
+        "vlrConsumoMWh": 423.77,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Serviço Público (tração elétrica)",
+        "ideTarifaMediaFornecimento": 2293,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Sul",
+        "vlrConsumoMWh": 459.28,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Serviço Público (tração elétrica)",
+        "ideTarifaMediaFornecimento": 2294,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Brasil",
+        "vlrConsumoMWh": 497.65,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Totais por Região",
+        "ideTarifaMediaFornecimento": 2295,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Centro-Oeste",
+        "vlrConsumoMWh": 514.48,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Totais por Região",
+        "ideTarifaMediaFornecimento": 2296,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Nordeste",
+        "vlrConsumoMWh": 463.98,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Totais por Região",
+        "ideTarifaMediaFornecimento": 2297,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Norte",
+        "vlrConsumoMWh": 578.48,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Totais por Região",
+        "ideTarifaMediaFornecimento": 2298,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Sudeste",
+        "vlrConsumoMWh": 506.88,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Totais por Região",
+        "ideTarifaMediaFornecimento": 2299,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Sul",
+        "vlrConsumoMWh": 475.26,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Totais por Região",
+        "ideTarifaMediaFornecimento": 2300,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Brasil",
+        "vlrConsumoMWh": 249.87,
+        "anoReferencia": 2013,
+        "mesReferencia": 3,
+        "nomClasseConsumo": "Total por Região",
+        "ideTarifaMediaFornecimento": 1552,
+        "dthProcessamento": 1505260800000
+    },
+    {
+        "nomRegiao": "Centro-Oeste",
+        "vlrConsumoMWh": 269.6,
+        "anoReferencia": 2013,
+        "mesReferencia": 3,
+        "nomClasseConsumo": "Total por Região",
+        "ideTarifaMediaFornecimento": 1558,
+        "dthProcessamento": 1505260800000
+    },
+    {
+        "nomRegiao": "Nordeste",
+        "vlrConsumoMWh": 255.04,
+        "anoReferencia": 2013,
+        "mesReferencia": 3,
+        "nomClasseConsumo": "Total por Região",
+        "ideTarifaMediaFornecimento": 1564,
+        "dthProcessamento": 1505260800000
+    },
+    {
+        "nomRegiao": "Norte",
+        "vlrConsumoMWh": 281.76,
+        "anoReferencia": 2013,
+        "mesReferencia": 3,
+        "nomClasseConsumo": "Total por Região",
+        "ideTarifaMediaFornecimento": 1570,
+        "dthProcessamento": 1505260800000
+    },
+    {
+        "nomRegiao": "Sudeste",
+        "vlrConsumoMWh": 263.66,
+        "anoReferencia": 2013,
+        "mesReferencia": 3,
+        "nomClasseConsumo": "Total por Região",
+        "ideTarifaMediaFornecimento": 1576,
+        "dthProcessamento": 1505260800000
+    },
+    {
+        "nomRegiao": "Sul",
+        "vlrConsumoMWh": 197.07,
+        "anoReferencia": 2013,
+        "mesReferencia": 3,
+        "nomClasseConsumo": "Total por Região",
+        "ideTarifaMediaFornecimento": 1582,
+        "dthProcessamento": 1505260800000
+    },
+    {
+        "nomRegiao": "Brasil",
+        "vlrConsumoMWh": 524.88,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Comercial e  Serviços e Outras",
+        "ideTarifaMediaFornecimento": 2230,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Centro-Oeste",
+        "vlrConsumoMWh": 544.55,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Comercial e  Serviços e Outras",
+        "ideTarifaMediaFornecimento": 2231,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Nordeste",
+        "vlrConsumoMWh": 503.15,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Comercial e  Serviços e Outras",
+        "ideTarifaMediaFornecimento": 2232,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Norte",
+        "vlrConsumoMWh": 610.74,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Comercial e  Serviços e Outras",
+        "ideTarifaMediaFornecimento": 2233,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Sudeste",
+        "vlrConsumoMWh": 524.07,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Comercial e  Serviços e Outras",
+        "ideTarifaMediaFornecimento": 2234,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Sul",
+        "vlrConsumoMWh": 511.62,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Comercial e  Serviços e Outras",
+        "ideTarifaMediaFornecimento": 2235,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Brasil",
+        "vlrConsumoMWh": 397.59,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Serviço Público (Água e  esgoto e saneamento)",
+        "ideTarifaMediaFornecimento": 2284,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Centro-Oeste",
+        "vlrConsumoMWh": 410.58,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Serviço Público (Água e  esgoto e saneamento)",
+        "ideTarifaMediaFornecimento": 2285,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Nordeste",
+        "vlrConsumoMWh": 373.21,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Serviço Público (Água e  esgoto e saneamento)",
+        "ideTarifaMediaFornecimento": 2286,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Norte",
+        "vlrConsumoMWh": 461.56,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Serviço Público (Água e  esgoto e saneamento)",
+        "ideTarifaMediaFornecimento": 2287,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Sudeste",
+        "vlrConsumoMWh": 404.43,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Serviço Público (Água e  esgoto e saneamento)",
+        "ideTarifaMediaFornecimento": 2288,
+        "dthProcessamento": 1569801600000
+    },
+    {
+        "nomRegiao": "Sul",
+        "vlrConsumoMWh": 390.75,
+        "anoReferencia": 2019,
+        "mesReferencia": 6,
+        "nomClasseConsumo": "Serviço Público (Água e  esgoto e saneamento)",
+        "ideTarifaMediaFornecimento": 2289,
+        "dthProcessamento": 1569801600000
     }
-  ]
+]
