@@ -28,6 +28,9 @@
   blockquote, q {
     quotes: none;
   }
+  h1 {
+    color: #FFB700;
+    background-color: transparent;}
   blockquote:before, blockquote:after,
   q:before, q:after {
     content: '';
@@ -39,10 +42,10 @@
   }
   a {
     text-decoration: none!important;
-    color: #ffb800ff;
+    color: #805B00;
   }
   a:hover {
-    color: #CC9200;
+    color: #BF8900;
   }
   input:-webkit-autofill {
     -webkit-box-shadow:0 0 0 50px #ffb80023 inset; /* Change the color to your own background color */
@@ -104,8 +107,8 @@
     width: 100%;
   }
   .active {
-    border-bottom: 2px solid #7620FF;
-    color: #7620FF;
+    border-bottom: 2px solid #805B00;
+    color: #805B00;
   }
   .tag {
     padding: 5px 10px;

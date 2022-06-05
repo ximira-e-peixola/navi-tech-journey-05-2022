@@ -1,6 +1,8 @@
 const webpack = require('webpack')
 const path = require('path')
 
+const Dotenv = require('dotenv-webpack')
+
 const config = {
   entry: [
     'react-hot-loader/patch',
@@ -67,8 +69,17 @@ const config = {
     ],
     alias: {
       'react-dom': '@hot-loader/react-dom'
+    },
+    fallback: {
+      fs: false,
+      os: false,
+      path: false,
+      process: false
     }
-  }
+  },
+  plugins: [
+    new Dotenv()
+  ]
 }
 
 module.exports = config
