@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
 This endpoint is used to calculate the estimated power output of a solar panel given the disponible area and the estimated location of the panel.
 @param {geojson} draw - The geojson of the disponible area
 
-@returns {json} - Object containing the estimated power output of the panel, the estimated GTI, the estimated area of the panel and the estimated monthly return of the panel.
+@returns {json} - Object containing the estimated power output of the panel, the estimated GTI, the estimated area of the panel, the estimated monthly return of the panel and the number of panels needed to cover the area.
 @units {kWh/m2} - out
 @units {m2} - area
 @units {kWh} - estimated_output
@@ -53,9 +53,11 @@ app.post("/api/calculate", (req, res) => {
     }
 
     const vlrConsumoMWh = Number(tarifa?.vlrConsumoMWh ?? 0)
-    const value_real = ((value*a)/1000) * vlrConsumoMWh
+    const solar_panel_area = 1.6
+    const n_solar_panel = Math.round((a*0.9)/solar_panel_area)
+    const value_real = ((value*n_solar_panel*solar_panel_area)/1000) * vlrConsumoMWh
     
-    res.send({ out: value, area: a, estimated_output: value * a, estimated_real: value_real });
+    res.send({ out: value, area: a, estimated_output: value * a, estimated_real: value_real, n_solar_panel });
 })
 
 const port = process.env.PORT || 3000;
