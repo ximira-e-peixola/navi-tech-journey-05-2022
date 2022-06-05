@@ -54,6 +54,7 @@ export function Map () {
 
   const handleCalculate = useCallback(() => {
     console.log(draw.getAll())
+    fetch('/api/calculate', { headers: { 'Content-Type': 'application/json' }, method: 'POST', body: JSON.stringify({ draw: draw.getAll() }) }).then(resp => resp.json().then(json => console.log(json)))
   }, [])
 
   const handleDraw = useCallback(() => {
