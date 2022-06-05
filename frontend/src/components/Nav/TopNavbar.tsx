@@ -52,47 +52,35 @@ export default function TopNavbar (props: TopNavbarProps) {
                   </RouterLink>
                 </li>
                 )}
-            <li className="semiBold font15 pointer">
-              <RouterLink style={{ padding: '10px 15px' }} to="calculate" >
-                Calculate
-              </RouterLink>
-            </li>
+
             <li className="semiBold font15 pointer">
               <Link activeClass="active" style={{ padding: '10px 15px' }} to="services" spy={true} smooth={true} offset={-80}>
-                Services
+                Serviços
               </Link>
             </li>
             <li className="semiBold font15 pointer">
               <Link activeClass="active" style={{ padding: '10px 15px' }} to="projects" spy={true} smooth={true} offset={-80}>
-                Projects
-              </Link>
-            </li>
-            <li className="semiBold font15 pointer">
-              <Link activeClass="active" style={{ padding: '10px 15px' }} to="blog" spy={true} smooth={true} offset={-80}>
-                Blog
+                Projetos
               </Link>
             </li>
             <li className="semiBold font15 pointer">
               <Link activeClass="active" style={{ padding: '10px 15px' }} to="pricing" spy={true} smooth={true} offset={-80}>
-                Pricing
+                Valores
               </Link>
             </li>
             <li className="semiBold font15 pointer">
               <Link activeClass="active" style={{ padding: '10px 15px' }} to="contact" spy={true} smooth={true} offset={-80}>
-                Contact
+                Contato
               </Link>
             </li>
           </UlWrapper>
           <UlWrapperRight className="flexNullCenter">
-            <li className="semiBold font15 pointer">
-              <a href="/" style={{ padding: '10px 30px 10px 0' }}>
-                Log in
-              </a>
-            </li>
             <li className="semiBold font15 pointer flexCenter">
-              <a href="/" className="radius8 lightBg" style={{ padding: '10px 15px' }}>
-                Get Started
-              </a>
+              <RouterLink style={{ padding: '10px 15px' }} to="calculate" >
+                <a className="radius8 lightBg" style={{ padding: '10px 15px' }}>
+                  Calcular
+                </a>
+              </RouterLink>
             </li>
           </UlWrapperRight>
         </NavInner>

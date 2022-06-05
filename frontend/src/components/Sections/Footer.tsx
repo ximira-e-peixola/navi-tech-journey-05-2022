@@ -20,8 +20,7 @@ const StyleP = styled.p`
 interface FooterProps {
   home?: boolean
 }
-export function Footer (props:FooterProps) {
-  const { home } = props
+export function Footer ({ home }:FooterProps) {
   const getCurrentYear = () => {
     return new Date().getFullYear()
   }

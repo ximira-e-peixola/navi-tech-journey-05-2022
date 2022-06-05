@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link as RouterLink } from 'react-router-dom'
 // Components
 import FullButton from '../Buttons/FullButton'
 // Assets
@@ -18,8 +19,14 @@ export function Header () {
             voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
           </HeaderP>
           <BtnWrapper>
-            <FullButton title="Get Started" action={() => console.log('button action')} />
-          </BtnWrapper>
+            <FullButton>
+              <RouterLink style={{ padding: '10px 15px' }} to="calculate" >
+                <span style={{ color: '#FFA63B' }}>
+                  Faça uma cotação
+                </span>
+              </RouterLink>
+            </FullButton>
+           </BtnWrapper>
         </div>
       </LeftSide>
       <RightSide>

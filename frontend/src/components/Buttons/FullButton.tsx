@@ -1,19 +1,21 @@
-import React from 'react'
+import React, { ReactElement } from 'react'
 import styled from 'styled-components'
 
-type FullButtonProps ={title:any
-   action:any
+type FullButtonProps ={title?:any
+   action?:Function
    border?:string
+   children?: ReactElement
 
 }
-export default function FullButton ({ title, action, border }:FullButtonProps) {
+export default function FullButton ({ title = '', action, border, children }:FullButtonProps) {
   return (
     <Wrapper
       className="animate pointer radius8"
-      onClick={ () => action() }
+      onClick={action ? () => action() : undefined }
       border={border}
     >
       {title}
+      {children || null}
     </Wrapper>
   )
 }

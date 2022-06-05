@@ -131,7 +131,18 @@ export function Map () {
             }} />
           </Content>
           <Sider breakpoint='lg' width={536} collapsedWidth={268} style={{ padding: 5, display: 'flex' }}>
-
+          <Select
+            style={{ margin: 10, width: 'calc(100vw - 40px)', maxWidth: 1000 }}
+            showSearch={true}
+            defaultActiveFirstOption={false}
+            showArrow={false}
+            filterOption={false}
+            onSearch={handleSearch}
+            onChange={handleChange}
+            notFoundContent={null}
+            placeholder='Digite seu endereço'
+            options={addressOptions}
+          />
               <Button style={buttonStyle} onClick={handleCalculate} icon={<CalculatorOutlined />} type="primary" disabled={disableCalculate}>Calcular</Button>
               <Button style={buttonStyle} onClick={handleDraw} icon={<EditOutlined />} type="default">Desenhar</Button>
               <Button style={buttonStyle} onClick={handleUndo} danger icon={<UndoOutlined />}> Desfazer </Button>

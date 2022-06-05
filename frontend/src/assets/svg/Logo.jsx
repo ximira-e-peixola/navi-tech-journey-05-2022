@@ -1,6 +1,6 @@
-import * as React from "react";
+import * as React from 'react'
 
-function SvgComponent(props) {
+function SvgComponent (props) {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={27} height={40} viewBox="0 0 27 40" {...props}>
       <g data-name="Group 101" transform="translate(-375 -21)">
@@ -10,7 +10,7 @@ function SvgComponent(props) {
         <rect data-name="Rectangle 12" width={8} height={8} rx={4} transform="translate(375 29)" fill="#4cd5c5" />
       </g>
     </svg>
-  );
+  )
 }
 
-export default SvgComponent;
+export default SvgComponent
