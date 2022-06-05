@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-scroll'
-import { Link as RouterLink, Route } from 'react-router-dom'
+import { Link as RouterLink } from 'react-router-dom'
 // Components
 import Sidebar from './Sidebar'
 import Backdrop from '../Elements/Backdrop'
 // Assets
 import BurgerIcon from '../../assets/svg/BurgerIcon'
+import Logo from '../../assets/svg/LogoSolarent'
 
 export default function TopNavbar () {
   const [y, setY] = useState<number>(window.scrollY)
@@ -26,7 +27,7 @@ export default function TopNavbar () {
       <Wrapper className="flexCenter animate whiteBg" style={y > 100 ? { height: '60px' } : { height: '80px' }}>
         <NavInner className="container flexSpaceCenter">
           <Link className="pointer flexNullCenter" to="home" smooth={true}>
-             LogoSolarent
+            <Logo height={30} width={130}></Logo>
           </Link>
           <BurderWrapper className="pointer" onClick={() => toggleSidebar(!sidebarOpen)}>
             <BurgerIcon />
