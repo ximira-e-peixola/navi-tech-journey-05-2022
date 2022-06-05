@@ -18,7 +18,7 @@ export function Header () {
             voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
           </HeaderP>
           <BtnWrapper>
-            <FullButton title="Get Started" action={console.log('button action')} />
+            <FullButton title="Get Started" action={() => console.log('button action')} />
           </BtnWrapper>
         </div>
       </LeftSide>
