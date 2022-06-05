@@ -2,6 +2,7 @@
 .cache/
 coverage/
 backend/dist/*
+backend-map/dist/*
 node_modules/
 *.log
 
