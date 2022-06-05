@@ -1,48 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
-// Components
-import FullButton from '../Buttons/FullButton'
-// Assets
-import RollerIcon from '../../assets/svg/Services/RollerIcon'
-import MonitorIcon from '../../assets/svg/Services/MonitorIcon'
-import BrowserIcon from '../../assets/svg/Services/BrowserIcon'
-import PrinterIcon from '../../assets/svg/Services/PrinterIcon'
 import CheckMark from '../../assets/svg/Checkmark'
 
-type PricingTableProps = { icon:any
-   price:any
+type PricingTableProps = {
    title:any
    text:any
-   offers:any
-   action:Function }
+   offers:any }
 
-export default function PricingTable ({ icon, price, title, text, offers, action }:PricingTableProps) {
-  let getIcon
-
-  switch (icon) {
-    case 'roller':
-      getIcon = <RollerIcon />
-      break
-    case 'monitor':
-      getIcon = <MonitorIcon />
-      break
-    case 'browser':
-      getIcon = <BrowserIcon />
-      break
-    case 'printer':
-      getIcon = <PrinterIcon />
-      break
-    default:
-      getIcon = <RollerIcon />
-      break
-  }
-
+export default function PricingTable ({ title, text, offers }:PricingTableProps) {
   return (
     <Wrapper className="whiteBg radius8 shadow">
-      <div className="flexSpaceCenter">
-        {getIcon}
-        <p className="font30 extraBold">{price}</p>
-      </div>
       <div style={{ margin: '30px 0' }}>
         <h4 className="font30 extraBold">{title}</h4>
         <p className="font13">{text}</p>
@@ -66,9 +33,6 @@ export default function PricingTable ({ icon, price, title, text, offers, action
               </div>
           ))
           : null}
-      </div>
-      <div style={{ maxWidth: '120px', margin: '30px auto 0 auto' }}>
-        <FullButton title="Buy" action={action} />
       </div>
     </Wrapper>
   )

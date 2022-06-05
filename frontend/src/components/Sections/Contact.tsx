@@ -8,11 +8,6 @@ export function Contact () {
         <div className="container">
           <HeaderInfo>
             <h1 className="font40 extraBold">Entre em contato!</h1>
-            <p className="font13">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-              <br />
-              labore et dolore magna aliquyam erat, sed diam voluptua.
-            </p>
           </HeaderInfo>
           <div className="row" style={{ paddingBottom: '30px' }}>
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
