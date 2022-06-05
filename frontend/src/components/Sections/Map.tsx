@@ -1,7 +1,7 @@
 import { DeleteOutlined, EditOutlined, UndoOutlined, CalculatorOutlined } from '@ant-design/icons'
 import MapboxDraw from '@mapbox/mapbox-gl-draw'
 import '@mapbox/mapbox-gl-draw/dist/mapbox-gl-draw.css'
-import { Button, Layout, Select } from 'antd'
+import { Button, Layout, Select, Row, Col } from 'antd'
 import { DefaultOptionType } from 'antd/lib/select'
 import maplibregl, { IControl, Map as MapMaplibre, StyleSpecification } from 'maplibre-gl'
 import 'maplibre-gl/dist/maplibre-gl.css'
@@ -108,21 +108,6 @@ export function Map () {
 
   return (
     <div style={{ paddingTop: 80 }}>
-      <Layout>
-        <Header>
-          <Select
-            style={{ margin: 10, width: 'calc(100vw - 40px)', maxWidth: 1000 }}
-            showSearch={true}
-            defaultActiveFirstOption={false}
-            showArrow={false}
-            filterOption={false}
-            onSearch={handleSearch}
-            onChange={handleChange}
-            notFoundContent={null}
-            placeholder='Digite seu endereço'
-            options={addressOptions}
-          />
-        </Header>
         <Layout>
           <Content>
             <div ref={mapContainer} className="map" style={{
@@ -130,27 +115,42 @@ export function Map () {
               height: 'calc(100vh - 240px)'
             }} />
           </Content>
-          <Sider breakpoint='lg' width={536} collapsedWidth={268} style={{ padding: 5, display: 'flex' }}>
-          <Select
-            style={{ margin: 10, width: 'calc(100vw - 40px)', maxWidth: 1000 }}
-            showSearch={true}
-            defaultActiveFirstOption={false}
-            showArrow={false}
-            filterOption={false}
-            onSearch={handleSearch}
-            onChange={handleChange}
-            notFoundContent={null}
-            placeholder='Digite seu endereço'
-            options={addressOptions}
-          />
-              <Button style={buttonStyle} onClick={handleCalculate} icon={<CalculatorOutlined />} type="primary" disabled={disableCalculate}>Calcular</Button>
-              <Button style={buttonStyle} onClick={handleDraw} icon={<EditOutlined />} type="default">Desenhar</Button>
-              <Button style={buttonStyle} onClick={handleUndo} danger icon={<UndoOutlined />}> Desfazer </Button>
-              <Button style={buttonStyle} onClick={handleClear} danger icon={<DeleteOutlined />}>Limpar</Button>
+          <Sider width={500} collapsedWidth={250} >
+            <Row style={{ width: '100%' }}>
+              <Col>
+                <Row>
+                  <Button type="primary" shape="round" onClick={handleDraw} icon={<EditOutlined />} />
+                </Row>
+                <Row>
+                  <Button type="primary" shape="round" onClick={handleUndo} danger icon={<UndoOutlined />}/>
+                </Row>
+                <Row>
+                  <Button type="primary" shape="round" onClick={handleClear} danger icon={<DeleteOutlined />}/>
+                </Row>
+              </Col>
+              <Col span={20}>
+                <Select
+                style={{ margin: '15px 5px', width: '98%' }}
+                showSearch={true}
+                size={'large'}
+                defaultActiveFirstOption={false}
+                showArrow={false}
+                filterOption={false}
+                onSearch={handleSearch}
+                onChange={handleChange}
+                notFoundContent={null}
+                placeholder='Digite seu endereço'
+                options={addressOptions}
+                />
+                <Row justify='center'>
+                  <Button size='large' type="primary" shape="round" onClick={handleCalculate} disabled={disableCalculate}>Calcular</Button>
+              </Row>
+              </Col>
+
+            </Row>
 
           </Sider>
         </Layout>
-      </Layout>
     </div>
   )
 }
