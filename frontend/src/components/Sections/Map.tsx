@@ -1,6 +1,6 @@
 import MapboxDraw from '@mapbox/mapbox-gl-draw'
 import '@mapbox/mapbox-gl-draw/dist/mapbox-gl-draw.css'
-import { Button, Layout, Select, Row, Col, Card, Descriptions } from 'antd'
+import { Button, Layout, Select, Row, Col, Card } from 'antd'
 import { DefaultOptionType } from 'antd/lib/select'
 import maplibregl, { IControl, Map as MapMaplibre, StyleSpecification } from 'maplibre-gl'
 import 'maplibre-gl/dist/maplibre-gl.css'
@@ -16,10 +16,33 @@ const draw = new MapboxDraw({
   displayControlsDefault: false
 })
 
+const consumerOptions = [
+  { value: 'Comercial e Serviços e Outras' },
+  { value: 'Comercial, Serviços e Outras' },
+  { value: 'Consumo Próprio' },
+  { value: 'Iluminaçăo Pública' },
+  { value: 'Industrial' },
+  { value: 'Poder Público' },
+  { value: 'Residencia' },
+  { value: 'Residencial' },
+  { value: 'Rural' },
+  { value: 'Rural Aquicultor' },
+  { value: 'Rural Irrigante' },
+  { value: 'Serviço Público' },
+  { value: 'Serviço Público (água e esgoto e saneamento)' },
+  { value: 'Serviço Público (água, esgoto e saneamento)' },
+  { value: 'Serviço Público (traçăo elétrica)' },
+  { value: 'Totais por Regiăo' },
+  { value: 'Total por Regiăo' },
+  { value: 'Comercial e  Serviços e Outras' },
+  { value: 'Serviço Público (água e  esgoto e saneamento)' }
+]
+
 export function Map () {
   const [disableCalculate, setDisableCalculate] = useState(true)
   const mapContainer = useRef(null) as unknown as React.MutableRefObject<HTMLInputElement>
   const map = useRef<MapMaplibre>()
+  const [consumer, setConsumer] = useState<string>()
   const [location, setLocation] = useState<DefaultOptionType>()
   const [searchTerm, setSearchTerm] = useState('')
   const [addressOptions, setAddressOptions] = useState<DefaultOptionType[]>()
@@ -66,7 +89,7 @@ export function Map () {
       {
         headers: { 'Content-Type': 'application/json' },
         method: 'POST',
-        body: JSON.stringify({ draw: draw.getAll(), location })
+        body: JSON.stringify({ draw: draw.getAll(), location, consumer })
       })
       .then(resp => resp.json()
         .then(json => {
@@ -149,6 +172,13 @@ export function Map () {
                   placeholder='Digite seu endereço'
                   options={addressOptions}
                 />
+                Selecione o seu perfil de consumidor:
+                <Select style={{ margin: '15px 5px', width: '98%' }}
+                  size={'large'}
+                  onChange={(val) => setConsumer(val.value)}
+                  options={consumerOptions}
+                  labelInValue
+                   />
                 <Row justify='center'>
                   <Button size='large' type="primary" shape="round" onClick={handleCalculate} disabled={disableCalculate}>Calcular</Button>
                 </Row>
