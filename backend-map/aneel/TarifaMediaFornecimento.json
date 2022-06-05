@@ -1,0 +1,56 @@
+[
+    {
+      "nomRegiao": "Brasil",
+      "vlrConsumoMWh": 463.54,
+      "anoReferencia": 2016,
+      "mesReferencia": 3,
+      "nomClasseConsumo": "Residencia",
+      "ideTarifaMediaFornecimento": 666,
+      "dthProcessamento": "2017-09-13"
+    },
+    {
+      "nomRegiao": "Centro-Oeste",
+      "vlrConsumoMWh": 464.09,
+      "anoReferencia": 2016,
+      "mesReferencia": 3,
+      "nomClasseConsumo": "Residencia",
+      "ideTarifaMediaFornecimento": 678,
+      "dthProcessamento": "2017-09-13"
+    },
+    {
+      "nomRegiao": "Nordeste",
+      "vlrConsumoMWh": 386.67,
+      "anoReferencia": 2016,
+      "mesReferencia": 3,
+      "nomClasseConsumo": "Residencia",
+      "ideTarifaMediaFornecimento": 690,
+      "dthProcessamento": "2017-09-13"
+    },
+    {
+      "nomRegiao": "Norte",
+      "vlrConsumoMWh": 442.69,
+      "anoReferencia": 2016,
+      "mesReferencia": 3,
+      "nomClasseConsumo": "Residencia",
+      "ideTarifaMediaFornecimento": 702,
+      "dthProcessamento": "2017-09-13"
+    },
+    {
+      "nomRegiao": "Sudeste",
+      "vlrConsumoMWh": 486.72,
+      "anoReferencia": 2016,
+      "mesReferencia": 3,
+      "nomClasseConsumo": "Residencia",
+      "ideTarifaMediaFornecimento": 714,
+      "dthProcessamento": "2017-09-13"
+    },
+    {
+      "nomRegiao": "Sul",
+      "vlrConsumoMWh": 493.9,
+      "anoReferencia": 2016,
+      "mesReferencia": 3,
+      "nomClasseConsumo": "Residencia",
+      "ideTarifaMediaFornecimento": 726,
+      "dthProcessamento": "2017-09-13"
+    }
+  ]

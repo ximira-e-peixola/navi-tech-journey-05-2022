@@ -23,7 +23,7 @@ export function Map () {
   const [disableCalculate, setDisableCalculate] = useState(true)
   const mapContainer = useRef(null) as unknown as React.MutableRefObject<HTMLInputElement>
   const map = useRef<MapMaplibre>()
-
+  const [location, setLocation] = useState<DefaultOptionType>()
   const [searchTerm, setSearchTerm] = useState('')
   const [addressOptions, setAddressOptions] = useState<DefaultOptionType[]>()
 
@@ -37,7 +37,9 @@ export function Map () {
         const opts = res.results.map((r: any) => ({
           value: r.formatted,
           label: r.formatted,
-          geometry: r.geometry
+          geometry: r.geometry,
+          state: r.components.state,
+          state_code: r.components.state_code
         }))
         setAddressOptions(opts)
       }).catch(err => {
@@ -50,7 +52,9 @@ export function Map () {
 
   const handleChange = useCallback((value: string) => {
     if (addressOptions) {
-      map.current?.easeTo({ center: addressOptions.find(a => a.value === value)?.geometry })
+      const loc = addressOptions.find(o => o.value === value)
+      setLocation(loc)
+      map.current?.easeTo({ center: loc?.geometry })
     }
   }, [addressOptions])
 
@@ -60,8 +64,8 @@ export function Map () {
 
   const handleCalculate = useCallback(() => {
     console.log(draw.getAll())
-    fetch('/api/calculate', { headers: { 'Content-Type': 'application/json' }, method: 'POST', body: JSON.stringify({ draw: draw.getAll() }) }).then(resp => resp.json().then(json => console.log(json)))
-  }, [])
+    fetch('/api/calculate', { headers: { 'Content-Type': 'application/json' }, method: 'POST', body: JSON.stringify({ draw: draw.getAll(), location }) }).then(resp => resp.json().then(json => console.log(json)))
+  }, [location])
 
   const handleDraw = useCallback(() => {
     draw.changeMode('draw_polygon')
