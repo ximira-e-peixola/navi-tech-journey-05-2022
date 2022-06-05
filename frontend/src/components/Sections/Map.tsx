@@ -1,4 +1,3 @@
-import { DeleteOutlined, EditOutlined, UndoOutlined, CalculatorOutlined } from '@ant-design/icons'
 import MapboxDraw from '@mapbox/mapbox-gl-draw'
 import '@mapbox/mapbox-gl-draw/dist/mapbox-gl-draw.css'
 import { Button, Layout, Select, Row, Col } from 'antd'
@@ -8,17 +7,14 @@ import 'maplibre-gl/dist/maplibre-gl.css'
 import opencage from 'opencage-api-client'
 import React, { useEffect, useRef, useState, useCallback } from 'react'
 import mapStyle from '../../assets/map/style.json'
+import MapControls from '../MapControls'
 
-const { Header, Sider, Content } = Layout
-
-const buttonStyle = {
-  margin: 5,
-  borderRadius: 5
-}
+const { Sider, Content } = Layout
 
 const draw = new MapboxDraw({
   displayControlsDefault: false
 })
+
 export function Map () {
   const [disableCalculate, setDisableCalculate] = useState(true)
   const mapContainer = useRef(null) as unknown as React.MutableRefObject<HTMLInputElement>
@@ -91,7 +87,10 @@ export function Map () {
       container: mapContainer.current,
       style: mapStyle as StyleSpecification
     })
-
+    map.current.addControl(
+      new MapControls({ handleClear, handleDraw, handleUndo }),
+      'top-right'
+    )
     map.current.addControl(new maplibregl.NavigationControl({}))
     map.current.addControl(draw as unknown as IControl)
     map.current.on('draw.create', handleDisableCalculate)
@@ -121,17 +120,6 @@ export function Map () {
           </Content>
           <Sider width={500} collapsedWidth={250} >
             <Row style={{ width: '100%' }}>
-              <Col>
-                <Row>
-                  <Button type="primary" shape="round" onClick={handleDraw} icon={<EditOutlined />} />
-                </Row>
-                <Row>
-                  <Button type="primary" shape="round" onClick={handleUndo} danger icon={<UndoOutlined />}/>
-                </Row>
-                <Row>
-                  <Button type="primary" shape="round" onClick={handleClear} danger icon={<DeleteOutlined />}/>
-                </Row>
-              </Col>
               <Col span={20}>
                 <Select
                 style={{ margin: '15px 5px', width: '98%' }}
