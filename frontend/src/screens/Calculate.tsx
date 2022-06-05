@@ -7,7 +7,7 @@ import { Map } from '../components/Sections/Map'
 export default function Landing () {
   return (
     <>
-      <TopNavbar />
+      <TopNavbar home={false} />
       <Map />
       <Footer />
     </>

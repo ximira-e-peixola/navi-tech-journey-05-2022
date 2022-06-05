@@ -27,7 +27,7 @@ export function Footer ({ home }:FooterProps) {
 
   return (
     <Wrapper>
-      <div className="darkBg">
+      <div className="orangeBg">
         <div className="container">
           <InnerWrapper className="flexSpaceCenter" style={{ padding: '30px 0' }}>
             <Link className="flexCenter animate pointer" to="home" smooth={true} offset={-80}>

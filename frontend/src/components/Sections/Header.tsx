@@ -5,7 +5,6 @@ import { Link as RouterLink } from 'react-router-dom'
 import FullButton from '../Buttons/FullButton'
 // Assets
 import HeaderImage from '../../assets/img/header-img.png'
-import QuotesIcon from '../../assets/svg/Quotes'
 import Dots from '../../assets/svg/Dots'
 
 export function Header () {
@@ -13,16 +12,15 @@ export function Header () {
     <Wrapper id="home" className="container flexSpaceCenter">
       <LeftSide className="flexCenter">
         <div>
-          <h1 className="extraBold font60">We are Digital Agency.</h1>
+          <h1 className="extraBold font60">Fornecer acesso à energia solar a custo de implementação zero.</h1>
           <HeaderP className="font13 semiBold">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-            voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+            evoluir sobre leasing e equipamento sobre assinatura.
           </HeaderP>
           <BtnWrapper>
             <FullButton>
               <RouterLink style={{ padding: '10px 15px' }} to="calculate" >
-                <span style={{ color: '#FFA63B' }}>
-                  Faça uma cotação
+                <span style={{ color: '#fff', fontWeight: 'bold' }}>
+                  Faça uma Cotação
                 </span>
               </RouterLink>
             </FullButton>
@@ -32,17 +30,6 @@ export function Header () {
       <RightSide>
         <ImageWrapper>
           <Img className="radius8" src={HeaderImage} alt="office" style={{ zIndex: 9 }} />
-          <QuoteWrapper className="flexCenter darkBg radius8">
-            <QuotesWrapper>
-              <QuotesIcon />
-            </QuotesWrapper>
-            <div>
-              <p className="font15 whiteColor">
-                <em>Friends, such as we desire, are dreams and fables. Friendship demands the ability to do without it.</em>
-              </p>
-              <p className="font13 orangeColor textRight" style={{ marginTop: '10px' }}>Ralph Waldo Emerson</p>
-            </div>
-          </QuoteWrapper>
           <DotsWrapper>
             <Dots />
           </DotsWrapper>
@@ -94,7 +81,7 @@ const HeaderP = styled.div`
   }
 `
 const BtnWrapper = styled.div`
-  max-width: 190px;
+  max-width: 250px;
   @media (max-width: 960px) {
     margin: 0 auto;
   }
@@ -125,25 +112,6 @@ const Img = styled.img`
     width: 80%;
     height: auto;
   }
-`
-const QuoteWrapper = styled.div`
-  position: absolute;
-  left: 0;
-  bottom: 50px;
-  max-width: 330px;
-  padding: 30px;
-  z-index: 99;
-  @media (max-width: 960px) {
-    left: 20px;
-  }
-  @media (max-width: 560px) {
-    bottom: -50px;
-  }
-`
-const QuotesWrapper = styled.div`
-  position: absolute;
-  left: -20px;
-  top: -10px;
 `
 const DotsWrapper = styled.div`
   position: absolute;

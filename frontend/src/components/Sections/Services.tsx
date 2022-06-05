@@ -1,13 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-// Components
-import ServiceBox from '../Elements/ServiceBox'
-import FullButton from '../Buttons/FullButton'
 // Assets
 import AddImage1 from '../../assets/img/add/1.png'
 import AddImage2 from '../../assets/img/add/2.png'
-import AddImage3 from '../../assets/img/add/3.png'
-import AddImage4 from '../../assets/img/add/4.png'
+// Components
+import ServiceBox from '../Elements/ServiceBox'
 
 export function Services () {
   return (
@@ -15,37 +12,35 @@ export function Services () {
       <div className="whiteBg" style={{ padding: '60px 0' }}>
         <div className="container">
           <HeaderInfo>
-            <h1 className="font40 extraBold">Our Awesome Services</h1>
+            <h1 className="font40 extraBold">Nossos Serviços</h1>
             <p className="font13">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-              <br />
-              labore et dolore magna aliquyam erat, sed diam voluptua.
+              Fornecemos e instalamos energia solar a custo zero.
             </p>
           </HeaderInfo>
           <ServiceBoxRow className="flex">
             <ServiceBoxWrapper>
               <ServiceBox
-                icon="roller"
-                title="Graphic Design"
-                subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                icon="monitor"
+                title="Leasing"
+                subtitle="Financiamento bla bla bla."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
               <ServiceBox
-                icon="monitor"
-                title="Web Design"
-                subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore."
+                icon="roller"
+                title="Instalação"
+                subtitle=" Instalação, sed diam nonumy eirmod tempor invidunt ut labore et dolore."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
               <ServiceBox
                 icon="browser"
-                title="Development"
-                subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat."
+                title="Manutenção"
+                subtitle="Manutenção, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
-              <ServiceBox icon="printer" title="Print" subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor." />
+              <ServiceBox icon="printer" title="Assinatura" subtitle="Assinatura , consetetur sadipscing elitr, sed diam nonumy eirmod tempor." />
             </ServiceBoxWrapper>
           </ServiceBoxRow>
         </div>
@@ -59,14 +54,6 @@ export function Services () {
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
                   diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
                 </p>
-                <ButtonsRow className="flexNullCenter" style={{ margin: '30px 0' }}>
-                  <div style={{ width: '190px' }}>
-                    <FullButton title="Get Started" action={() => alert('clicked')} />
-                  </div>
-                  <div style={{ width: '190px', marginLeft: '15px' }}>
-                    <FullButton title="Contact Us" action={() => alert('clicked')} />
-                  </div>
-                </ButtonsRow>
               </AddLeft>
               <AddRight>
                 <AddRightInner>
@@ -77,14 +64,6 @@ export function Services () {
                     <AddImgWrapp2>
                       <img src={AddImage2} alt="office" />
                     </AddImgWrapp2>
-                  </div>
-                  <div className="flexNullCenter">
-                    <AddImgWrapp3>
-                      <img src={AddImage3} alt="office" />
-                    </AddImgWrapp3>
-                    <AddImgWrapp4>
-                      <img src={AddImage4} alt="office" />
-                    </AddImgWrapp4>
                   </div>
                 </AddRightInner>
               </AddRight>
@@ -130,11 +109,6 @@ const Advertising = styled.div`
     flex-direction: column;
     padding: 0 0 30px 0;
     margin: 80px 0 0px 0;
-  }
-`
-const ButtonsRow = styled.div`
-  @media (max-width: 860px) {
-    justify-content: space-between;
   }
 `
 const AddLeft = styled.div`
@@ -185,30 +159,6 @@ const AddImgWrapp1 = styled.div`
 const AddImgWrapp2 = styled.div`
   width: 30%;
   margin: 0 5% 10px 5%;
-  img {
-    width: 100%;
-    height: auto;
-    border-radius: 1rem;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
-  }
-`
-const AddImgWrapp3 = styled.div`
-  width: 20%;
-  margin-left: 40%;
-  img {
-    width: 100%;
-    height: auto;
-    border-radius: 1rem;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
-  }
-`
-const AddImgWrapp4 = styled.div`
-  width: 30%;
-  margin: 0 5% auto;
   img {
     width: 100%;
     height: auto;
