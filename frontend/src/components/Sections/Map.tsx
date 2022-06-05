@@ -1,13 +1,20 @@
 import { DeleteOutlined, EditOutlined, UndoOutlined, CalculatorOutlined } from '@ant-design/icons'
 import MapboxDraw from '@mapbox/mapbox-gl-draw'
 import '@mapbox/mapbox-gl-draw/dist/mapbox-gl-draw.css'
-import { Button, Select } from 'antd'
+import { Button, Layout, Select } from 'antd'
 import { DefaultOptionType } from 'antd/lib/select'
 import maplibregl, { IControl, Map as MapMaplibre, StyleSpecification } from 'maplibre-gl'
 import 'maplibre-gl/dist/maplibre-gl.css'
 import opencage from 'opencage-api-client'
 import React, { useEffect, useRef, useState, useCallback } from 'react'
 import mapStyle from '../../assets/map/style.json'
+
+const { Header, Sider, Content } = Layout
+
+const buttonStyle = {
+  margin: 5,
+  borderRadius: 5
+}
 
 const draw = new MapboxDraw({
   displayControlsDefault: false
@@ -100,32 +107,39 @@ export function Map () {
   }, [searchTerm])
 
   return (
-    <div className="map-wrap" style={{ width: '100%', height: 600 }}>
-      <div>
-        <Select
-          style={{ margin: 10, width: 'calc(100vw - 40px)', maxWidth: 1000 }}
-          showSearch={true}
-          defaultActiveFirstOption={false}
-          showArrow={false}
-          filterOption={false}
-          onSearch={handleSearch}
-          onChange={handleChange}
-          notFoundContent={null}
-          placeholder='Digite seu endereço'
-          options={addressOptions}
-        />
-        <Button.Group>
-          <Button onClick={handleCalculate} icon={<CalculatorOutlined />} type="primary" disabled={disableCalculate}>Calcular</Button>
-          <Button onClick={handleDraw} icon={<EditOutlined />} type="default">Desenhar</Button>
-          <Button onClick={handleUndo} danger icon={<UndoOutlined />}> Desfazer </Button>
-          <Button onClick={handleClear} danger icon={<DeleteOutlined />}>Limpar</Button>
-        </Button.Group>
-      </div>
-      <div ref={mapContainer} className="map" style={{
-        position: 'relative',
-        width: '100%',
-        height: '100%'
-      }} />
+    <div style={{ paddingTop: 80 }}>
+      <Layout>
+        <Header>
+          <Select
+            style={{ margin: 10, width: 'calc(100vw - 40px)', maxWidth: 1000 }}
+            showSearch={true}
+            defaultActiveFirstOption={false}
+            showArrow={false}
+            filterOption={false}
+            onSearch={handleSearch}
+            onChange={handleChange}
+            notFoundContent={null}
+            placeholder='Digite seu endereço'
+            options={addressOptions}
+          />
+        </Header>
+        <Layout>
+          <Content>
+            <div ref={mapContainer} className="map" style={{
+              width: '100%',
+              height: 'calc(100vh - 240px)'
+            }} />
+          </Content>
+          <Sider breakpoint='lg' width={536} collapsedWidth={268} style={{ padding: 5, display: 'flex' }}>
+
+              <Button style={buttonStyle} onClick={handleCalculate} icon={<CalculatorOutlined />} type="primary" disabled={disableCalculate}>Calcular</Button>
+              <Button style={buttonStyle} onClick={handleDraw} icon={<EditOutlined />} type="default">Desenhar</Button>
+              <Button style={buttonStyle} onClick={handleUndo} danger icon={<UndoOutlined />}> Desfazer </Button>
+              <Button style={buttonStyle} onClick={handleClear} danger icon={<DeleteOutlined />}>Limpar</Button>
+
+          </Sider>
+        </Layout>
+      </Layout>
     </div>
   )
 }
