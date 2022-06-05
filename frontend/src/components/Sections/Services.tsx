@@ -18,13 +18,7 @@ export function Services () {
             </p>
           </HeaderInfo>
           <ServiceBoxRow className="flex">
-            <ServiceBoxWrapper>
-              <ServiceBox
-                icon="monitor"
-                title="Leasing"
-                subtitle="Financiamento bla bla bla."
-              />
-            </ServiceBoxWrapper>
+
             <ServiceBoxWrapper>
               <ServiceBox
                 icon="roller"
@@ -39,21 +33,14 @@ export function Services () {
                 subtitle="Manutenção, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat."
               />
             </ServiceBoxWrapper>
-            <ServiceBoxWrapper>
-              <ServiceBox icon="printer" title="Assinatura" subtitle="Assinatura , consetetur sadipscing elitr, sed diam nonumy eirmod tempor." />
-            </ServiceBoxWrapper>
           </ServiceBoxRow>
         </div>
         <div className="lightBg">
           <div className="container">
             <Advertising className="flexSpaceCenter">
               <AddLeft>
-                <h4 className="font15 semiBold">A few words about company</h4>
-                <h2 className="font40 extraBold">A Study of Creativity</h2>
-                <p className="font12">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
-                  diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-                </p>
+                <h4 className="font15 semiBold">Sobre nós</h4>
+                <h2 className="font40 extraBold">Facilitamos o acesso a energia renovável</h2>
               </AddLeft>
               <AddRight>
                 <AddRightInner>

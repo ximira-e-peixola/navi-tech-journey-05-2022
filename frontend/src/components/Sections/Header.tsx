@@ -12,9 +12,9 @@ export function Header () {
     <Wrapper id="home" className="container flexSpaceCenter">
       <LeftSide className="flexCenter">
         <div>
-          <h1 className="extraBold font60">Fornecer acesso à energia solar a custo de implementação zero.</h1>
+          <h1 className="extraBold font60">Energia solar sem custo de implementação.</h1>
           <HeaderP className="font13 semiBold">
-            evoluir sobre leasing e equipamento sobre assinatura.
+            O custo da sua conta de luz pode se tornar um investimento.
           </HeaderP>
           <BtnWrapper>
             <FullButton>
