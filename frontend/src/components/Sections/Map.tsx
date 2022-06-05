@@ -25,10 +25,9 @@ export function Map () {
   }, [])
 
   const searchEndereco = useCallback((value: string) => {
-    console.log(value)
     if (value && value !== '') {
       opencage.geocode({ q: value, key: 'ce175b41591444349a3e290766290ba8' }).then(res => {
-        const opts = res.results.map((r: any, idx: number) => ({
+        const opts = res.results.map((r: any) => ({
           value: r.formatted,
           label: r.formatted,
           geometry: r.geometry
@@ -38,6 +37,7 @@ export function Map () {
         console.log(err)
       })
     } else {
+      console.log('MEEE')
       setAddressOptions(undefined)
     }
   }, [])
@@ -46,7 +46,7 @@ export function Map () {
     if (addressOptions) {
       map.current?.easeTo({ center: addressOptions.find(a => a.value === value)?.geometry })
     }
-  }, [])
+  }, [addressOptions])
 
   const handleSearch = useCallback((value: string) => {
     setSearchTerm(value)
