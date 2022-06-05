@@ -2,6 +2,7 @@ const webpack = require('webpack')
 const path = require('path')
 
 const Dotenv = require('dotenv-webpack')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const config = {
   entry: [
@@ -85,7 +86,13 @@ const config = {
     }
   },
   plugins: [
-    new Dotenv()
+    new Dotenv(),
+    new CopyWebpackPlugin({
+      patterns: [
+        // relative path is from src
+        { from: './src/assets/img/favicon.ico' } // <- your path to favicon
+      ]
+    })
   ]
 }
 
