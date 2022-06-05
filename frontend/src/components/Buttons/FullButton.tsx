@@ -25,15 +25,15 @@ type WrapperProps ={
 }
 
 const Wrapper = styled.button<WrapperProps>`
-  border: 1px solid ${(props) => (props.border ? '#707070' : '#7620ff')};
-  background-color: ${(props) => (props.border ? 'transparent' : '#7620ff')};
+  border: 1px solid ${(props) => (props.border ? '#FFB800' : '#CC9200')};
+  background-color: ${(props) => (props.border ? 'transparent' : '#ffb800ff')};
   width: 100%;
   padding: 15px;
   outline: none;
   color: ${(props) => (props.border ? '#707070' : '#fff')};
   :hover {
-    background-color: ${(props) => (props.border ? 'transparent' : '#580cd2')};
-    border: 1px solid #7620ff;
-    color: ${(props) => (props.border ? '#7620ff' : '#fff')};
+    background-color: ${(props) => (props.border ? 'transparent' : '#FFCC4D')};
+    border: 1px solid #FFB800;
+    color: ${(props) => (props.border ? '#FFB800' : '#fff')};
   }
 `
