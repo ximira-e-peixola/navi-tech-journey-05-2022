@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-scroll'
+import { Link as RouterLink, Route } from 'react-router-dom'
 // Components
 import Sidebar from './Sidebar'
 import Backdrop from '../Elements/Backdrop'
@@ -32,9 +33,14 @@ export default function TopNavbar () {
           </BurderWrapper>
           <UlWrapper className="flexNullCenter">
             <li className="semiBold font15 pointer">
-              <Link activeClass="active" style={{ padding: '10px 15px' }} to="home" spy={true} smooth={true} offset={-80}>
+              <RouterLink style={{ padding: '10px 15px' }} to="/">
                 Home
-              </Link>
+              </RouterLink>
+            </li>
+            <li className="semiBold font15 pointer">
+              <RouterLink style={{ padding: '10px 15px' }} to="calculate" >
+                Calculate
+              </RouterLink>
             </li>
             <li className="semiBold font15 pointer">
               <Link activeClass="active" style={{ padding: '10px 15px' }} to="services" spy={true} smooth={true} offset={-80}>
