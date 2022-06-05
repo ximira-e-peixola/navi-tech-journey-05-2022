@@ -31,9 +31,14 @@ app.post("/api/calculate", (req, res) => {
     if(!req.body.location){
         res.status(400).send("No location data provided");
     }
+    if(!req.body.consumer){
+        res.status(400).send("No consumer data provided");
+    }
 
     const draw = req.body.draw;
     const location = req.body.location;
+    const consumer = req.body.consumer;
+
     const c = center(draw)
     const a = area(draw)
 
@@ -47,16 +52,16 @@ app.post("/api/calculate", (req, res) => {
 
     const regiao = EstadosPorRegiao.find((estado) => estado.sigla === location.state_code || estado.nome === location.state)?.regiao?.nome
     
-    let tarifa = TarifaMediaFornecimento.find(tarifa => tarifa.nomRegiao === regiao)
+    let tarifa = TarifaMediaFornecimento.filter(tarifa => tarifa.nomClasseConsumo === consumer).find(tarifa => tarifa.nomRegiao === regiao)
     if(!tarifa){
-        tarifa = TarifaMediaFornecimento.find(tarifa => tarifa.nomRegiao === "Brasil")
+        tarifa = TarifaMediaFornecimento.find(tarifa => tarifa.nomRegiao === "Brasil" && tarifa.nomClasseConsumo === 'Residencial')
     }
 
     const vlrConsumoMWh = Number(tarifa?.vlrConsumoMWh ?? 0)
     const solar_panel_area = 1.6
     const n_solar_panel = Math.round((a*0.9)/solar_panel_area)
-    const value_real = ((value*n_solar_panel*solar_panel_area)/1000) * vlrConsumoMWh
-    
+    const value_real = ((value*n_solar_panel*solar_panel_area)/100) * vlrConsumoMWh
+     
     res.send({ out: value, area: a, estimated_output: value * a, estimated_real: value_real, n_solar_panel });
 })
 
