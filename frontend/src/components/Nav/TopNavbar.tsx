@@ -9,7 +9,11 @@ import Backdrop from '../Elements/Backdrop'
 import BurgerIcon from '../../assets/svg/BurgerIcon'
 import Logo from '../../assets/svg/LogoSolarent'
 
-export default function TopNavbar () {
+interface TopNavbarProps {
+  home?: boolean
+}
+export default function TopNavbar (props: TopNavbarProps) {
+  const { home } = props
   const [y, setY] = useState<number>(window.scrollY)
   const [sidebarOpen, toggleSidebar] = useState<boolean>(false)
 
@@ -33,11 +37,21 @@ export default function TopNavbar () {
             <BurgerIcon />
           </BurderWrapper>
           <UlWrapper className="flexNullCenter">
-            <li className="semiBold font15 pointer">
-              <RouterLink style={{ padding: '10px 15px' }} to="/">
-                Home
-              </RouterLink>
-            </li>
+            {home
+              ? (
+                <li className="semiBold font15 pointer">
+                  <Link activeClass="active" style={{ padding: '10px 15px' }} to="home" spy={true} smooth={true} offset={-80}>
+                    Home
+                  </Link>
+                </li>
+                )
+              : (
+                <li className="semiBold font15 pointer">
+                  <RouterLink style={{ padding: '10px 15px' }} to="/">
+                    Home
+                  </RouterLink>
+                </li>
+                )}
             <li className="semiBold font15 pointer">
               <RouterLink style={{ padding: '10px 15px' }} to="calculate" >
                 Calculate

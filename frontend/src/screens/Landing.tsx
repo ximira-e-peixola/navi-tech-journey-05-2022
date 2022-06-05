@@ -12,14 +12,14 @@ import { Services } from '../components/Sections/Services'
 export default function Landing () {
   return (
     <>
-      <TopNavbar />
+      <TopNavbar home />
       <Header />
       <Services />
       <Projects />
       <Blog />
       <Pricing />
       <Contact />
-      <Footer />
+      <Footer home/>
     </>
   )
 }
