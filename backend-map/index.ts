@@ -46,9 +46,13 @@ app.post("/api/calculate", (req, res) => {
     const value = band.pixels.get(pt.x, pt.y)
 
     const regiao = EstadosPorRegiao.find((estado) => estado.sigla === location.state_code || estado.nome === location.state)?.regiao?.nome
+    
+    let tarifa = TarifaMediaFornecimento.find(tarifa => tarifa.nomRegiao === regiao)
+    if(!tarifa){
+        tarifa = TarifaMediaFornecimento.find(tarifa => tarifa.nomRegiao === "Brasil")
+    }
 
-    const tarifa = TarifaMediaFornecimento.find(tarifa => tarifa.nomRegiao === regiao)
-    const vlrConsumoMWh = Number(tarifa?.vlrConsumoMWh?? 0)
+    const vlrConsumoMWh = Number(tarifa?.vlrConsumoMWh ?? 0)
     const value_real = ((value*a)/1000) * vlrConsumoMWh
     
     res.send({ out: value, area: a, estimated_output: value * a, estimated_real: value_real });
