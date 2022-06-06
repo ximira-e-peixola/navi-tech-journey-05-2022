@@ -26,10 +26,9 @@ export function Pricing () {
                 text="Temos soluções especiais para energia solar em ambiente comercial."
                 offers={[
                   { name: 'Custo de adesão zero' },
-                  { name: 'Offer' },
-                  { name: 'Product Offer #2' },
-                  { name: 'Product' },
-                  { name: 'Product Offer' }
+                  { name: 'Energia de fonte renovável' },
+                  { name: 'Sustentabilidade para o seu negócio' },
+                  { name: 'Redução de custos' }
                 ]}
               />
             </TableBox>

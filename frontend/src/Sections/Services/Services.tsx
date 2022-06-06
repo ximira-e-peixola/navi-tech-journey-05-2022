@@ -34,14 +34,14 @@ export function Services () {
               <ServiceBox
                 icon="roller"
                 title="Instalação"
-                subtitle=" Instalação, sed diam nonumy eirmod tempor invidunt ut labore et dolore."
+                subtitle="Profissionais capacitados e com experiência na área."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
               <ServiceBox
                 icon="browser"
                 title="Manutenção"
-                subtitle="Manutenção, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat."
+                subtitle="Serviço de manutenção preventiva a cada 1 ano e suporte durante toda a utilização do serviço."
               />
             </ServiceBoxWrapper>
           </ServiceBoxRow>

@@ -6,6 +6,7 @@ padding: 50px 0;
 `
 export const HeaderInfo = styled.div`
 margin-bottom: 50px;
+margin-top: 50px;
 @media (max-width: 860px) {
   text-align: center;
 }
