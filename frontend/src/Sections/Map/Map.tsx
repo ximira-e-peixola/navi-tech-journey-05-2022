@@ -138,7 +138,7 @@ export function Map () {
         <Content>
           <div ref={mapContainer} className="map" style={{
             width: '100%',
-            height: 'calc(100vh - 180px)'
+            height: 'calc(100vh - 200px)'
           }} />
         </Content>
         <Sider width={500} collapsedWidth={250} style={{ backgroundColor: '#ffb80023' }}>

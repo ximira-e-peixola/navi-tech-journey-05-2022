@@ -52,6 +52,9 @@
     box-shadow: transparent;
     -webkit-text-fill-color: #fff;
   }
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
   body {
     background: #ffb80023;
     color: #ffb800ff;

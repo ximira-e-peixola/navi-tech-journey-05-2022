@@ -34,9 +34,9 @@ export default function TopNavbar ({ home = true }: TopNavbarProps) {
           <Link className="pointer flexNullCenter" to="home" smooth={true}>
             <Logo height={30} width={130}></Logo>
           </Link>)
-          : (<RouterLink style={{ padding: '10px 15px' }} to="/">
-          <Logo height={30} width={130}></Logo>
-
+          : (
+          <RouterLink className="pointer flexNullCenter" to="/">
+            <Logo height={30} width={130}></Logo>
           </RouterLink>
             )}
           <BurderWrapper className="pointer" onClick={() => toggleSidebar(!sidebarOpen)}>

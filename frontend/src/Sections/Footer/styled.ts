@@ -13,3 +13,7 @@ export const StyleP = styled.p`
   margin: 20px 0;
 }
 `
+
+export const PlaceHolder = styled.div`
+width: 64px;
+`
