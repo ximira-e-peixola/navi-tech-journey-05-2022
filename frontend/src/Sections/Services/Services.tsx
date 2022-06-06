@@ -23,9 +23,9 @@ export function Services () {
       <div className="whiteBg" style={{ padding: '60px 0' }}>
         <div className="container">
           <HeaderInfo>
-            <h1 className="font40 extraBold">Nossos Serviços</h1>
+            <h1 className="font40 extraBold">Reduza seus custos com energia</h1>
             <p className="font13">
-              Fornecemos e instalamos energia solar a custo zero.
+              Através do nosso sistema de energia por assinatura
             </p>
           </HeaderInfo>
           <ServiceBoxRow className="flex">

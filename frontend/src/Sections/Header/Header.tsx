@@ -23,9 +23,9 @@ export function Header () {
     <Wrapper id="home" className="container flexSpaceCenter">
       <LeftSide className="flexCenter">
         <div>
-          <h1 className="extraBold font60">Energia solar sem custo de implementação.</h1>
+          <h1 className="extraBold font60" >Energia solar a custo de implementação <u style={{ color: 'black' }}>zero</u></h1>
           <HeaderP className="font13 semiBold">
-            O custo da sua conta de luz pode se tornar um investimento.
+          Sua energia mais barata e por assinatura.
           </HeaderP>
           <BtnWrapper>
             <FullButton>
