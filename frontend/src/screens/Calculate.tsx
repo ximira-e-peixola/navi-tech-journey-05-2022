@@ -1,8 +1,8 @@
 import React from 'react'
 
 import TopNavbar from '../components/Nav/TopNavbar'
-import { Footer } from '../components/Sections/Footer'
-import { Map } from '../components/Sections/Map'
+import { Footer } from '../Sections/Footer'
+import { Map } from '../Sections/Map'
 
 export default function Landing () {
   return (

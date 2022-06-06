@@ -6,8 +6,8 @@ import maplibregl, { IControl, Map as MapMaplibre, StyleSpecification } from 'ma
 import 'maplibre-gl/dist/maplibre-gl.css'
 import opencage from 'opencage-api-client'
 import React, { useEffect, useRef, useState, useCallback } from 'react'
-import mapStyle from '../../assets/map/style.json'
-import MapControls from '../MapControls'
+import mapStyle from '../assets/map/style.json'
+import MapControls from '../components/MapControls'
 import CardTitle from './CardTitle'
 
 const { Sider, Content } = Layout
