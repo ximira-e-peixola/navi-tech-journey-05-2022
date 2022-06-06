@@ -6,8 +6,8 @@ import { Link as RouterLink } from 'react-router-dom'
 import CloseIcon from '../../assets/svg/CloseIcon'
 
 type SidebarProps = {
-   sidebarOpen: any
-   toggleSidebar: any
+   sidebarOpen: boolean
+   toggleSidebar: Function
    }
 
 export default function Sidebar ({ sidebarOpen, toggleSidebar }:SidebarProps) {
@@ -93,7 +93,7 @@ export default function Sidebar ({ sidebarOpen, toggleSidebar }:SidebarProps) {
   )
 }
 
-type WrapperProps = {sidebarOpen: any}
+type WrapperProps = {sidebarOpen: boolean}
 const Wrapper = styled.nav<WrapperProps>`
   width: 400px;
   height: 100vh;

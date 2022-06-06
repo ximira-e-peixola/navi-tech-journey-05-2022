@@ -6,9 +6,11 @@ import maplibregl, { IControl, Map as MapMaplibre, StyleSpecification } from 'ma
 import 'maplibre-gl/dist/maplibre-gl.css'
 import opencage from 'opencage-api-client'
 import React, { useEffect, useRef, useState, useCallback } from 'react'
-import mapStyle from '../assets/map/style.json'
-import MapControls from '../components/MapControls'
+import mapStyle from '../../assets/map/style.json'
+import MapControls from '../../components/MapControls'
 import CardTitle from './CardTitle'
+import { CardResult } from './CardResult'
+import { SelectUses } from './SelectUses'
 
 const { Sider, Content } = Layout
 
@@ -16,27 +18,13 @@ const draw = new MapboxDraw({
   displayControlsDefault: false
 })
 
-const consumerOptions = [
-  { value: 'Comercial e Serviços e Outras' },
-  { value: 'Comercial, Serviços e Outras' },
-  { value: 'Consumo Próprio' },
-  { value: 'Iluminaçăo Pública' },
-  { value: 'Industrial' },
-  { value: 'Poder Público' },
-  { value: 'Residencia' },
-  { value: 'Residencial' },
-  { value: 'Rural' },
-  { value: 'Rural Aquicultor' },
-  { value: 'Rural Irrigante' },
-  { value: 'Serviço Público' },
-  { value: 'Serviço Público (água e esgoto e saneamento)' },
-  { value: 'Serviço Público (água, esgoto e saneamento)' },
-  { value: 'Serviço Público (traçăo elétrica)' },
-  { value: 'Totais por Regiăo' },
-  { value: 'Total por Regiăo' },
-  { value: 'Comercial e  Serviços e Outras' },
-  { value: 'Serviço Público (água e  esgoto e saneamento)' }
-]
+export type IResult = {
+  out: number
+  area: number
+  estimated_output: number
+  estimated_real: number
+  n_solar_panel: number
+  }
 
 export function Map () {
   const [disableCalculate, setDisableCalculate] = useState(true)
@@ -46,7 +34,7 @@ export function Map () {
   const [location, setLocation] = useState<DefaultOptionType>()
   const [searchTerm, setSearchTerm] = useState('')
   const [addressOptions, setAddressOptions] = useState<DefaultOptionType[]>()
-  const [result, setResult] = useState<{ out: number, area: number, estimated_output: number, estimated_real: number, n_solar_panel: number }>()
+  const [result, setResult] = useState<IResult>()
 
   const handleDisableCalculate = useCallback(() => {
     setDisableCalculate(draw?.getAll()?.features?.length === 0)
@@ -173,51 +161,13 @@ export function Map () {
                   options={addressOptions}
                 />
                 Selecione o seu perfil de consumidor:
-                <Select style={{ margin: '15px 5px', width: '98%' }}
-                  size={'large'}
-                  onChange={(val) => setConsumer(val.value)}
-                  options={consumerOptions}
-                  labelInValue
-                   />
+                <SelectUses setConsumer={setConsumer}/>
                 <Row justify='center'>
                   <Button size='large' type="primary" shape="round" onClick={handleCalculate} disabled={disableCalculate}>Calcular</Button>
                 </Row>
               </Card>
               {result && (
-                <Card style={{ backgroundColor: 'rgba(255, 204, 77, 0.2)', margin: 10, borderRadius: 20 }} bordered={false} title="Resultado estimado para a sua instalação:">
-                  <Row>
-                    <Col span={12}>
-                      Número de paineis solares:
-                    </Col>
-                    <Col span={12}>
-                      {result.n_solar_panel}
-                    </Col>
-                  </Row>
-                  <Row>
-                    <Col span={12}>
-                      Área de instalação:
-                    </Col>
-                    <Col span={12}>
-                      {result.area.toFixed(2)}m²
-                    </Col>
-                  </Row>
-                  <Row>
-                    <Col span={12}>
-                      Potência gerada estimada:
-                    </Col>
-                    <Col span={12}>
-                      {result.estimated_output.toFixed(2)}kWh
-                    </Col>
-                  </Row>
-                  <Row>
-                    <Col span={12}>
-                      Produção mensal estimada:
-                    </Col>
-                    <Col span={12}>
-                      R${result.estimated_real.toFixed(2)}
-                    </Col>
-                  </Row>
-                </Card>
+                <CardResult result={result}/>
               )}
             </Col>
           </Row>
