@@ -1,0 +1,22 @@
+version: '2'
+services:
+  frontend:
+    image: navi-frontend
+    ports:
+      - 80:80
+    environment:
+      - OPENCAGE_API_KEY=ce175b41591444349a3e290766290ba8
+    networks:
+      - project
+    depends_on:
+      - server
+
+  server:
+    image: navi-server
+    ports:
+      - 5000
+    networks:
+      - project
+
+networks:
+  project:
