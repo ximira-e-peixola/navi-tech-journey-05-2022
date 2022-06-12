@@ -1,7 +1,7 @@
 version: '2'
 services:
   frontend:
-    image: navi-frontend
+    image: solarent-frontend
     ports:
       - 80:80
     environment:
@@ -12,7 +12,7 @@ services:
       - server
 
   server:
-    image: navi-server
+    image: solarent-server
     ports:
       - 5000
     networks:
